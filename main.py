@@ -28,6 +28,13 @@ app.layout = html.Div([
         }
     ),
     html.Div([
+        html.H2(
+            children='Choropleth Map',
+            style={
+                'textAlign': 'center',
+                'color': '#290C19'
+            }
+        ),
         dcc.Graph(
             id="choropleth-map",
             figure=px.choropleth(
@@ -46,19 +53,28 @@ app.layout = html.Div([
         )
     ]),
     html.Div([
+        html.H2(
+            children='Time Series Chart',
+            style={
+                'textAlign': 'center',
+                'color': '#290C19'
+            }
+        ),
         dcc.Graph(id="time-series-chart"),
         html.P("Select province(s):"),
         dcc.Dropdown(
             id="province-dropdown",
-            options=[{"label": x, "value": x} for x in df_reshaped["Provinsi"].unique()],
+            options=[{"label": x, "value": x}
+                     for x in df_reshaped["Provinsi"].unique()],
             value=[df_reshaped["Provinsi"].unique()[0]],
             multi=True,
             clearable=False
         )
     ],
-    style={'margin-top': '20px', 'margin-bottom': '20px'}
+        style={'margin-top': '20px', 'margin-bottom': '20px'}
     )
 ])
+
 
 @app.callback(
     Output("time-series-chart", "figure"),
