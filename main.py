@@ -5,7 +5,7 @@ import json
 
 app = Dash(__name__)
 
-df = pd.read_csv("Area-kakao.csv")
+df = pd.read_csv("Areal-Kakao.csv")
 df = df.drop(columns=["No"])
 
 df_reshaped = df.melt(
