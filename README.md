@@ -1,4 +1,4 @@
-# Gkv-Cocoa;
+# Gkv-Cocoa
 
 Proyek mata kuliah Grafika Komputer dan Visualisasi.
 Dibuat dengan menggunakan bahasa pemrograman Python dan library Plotly Express untuk membuat visualisasi data area lahan kakao di Indonesia berdasarkan provinsi dari tahun 2014 hingga 2021.
@@ -32,13 +32,13 @@ Berikut adalah langkah-langkah untuk menjalankan Program ini di lingkungan lokal
 2. Clone repositori Gkv-Cocoa ke direktori lokal Anda:
 
    ```bash
-   git clone https://github.com/namarepo/Gkv-Cocoa.git
+   git clone https://github.com/andyanamafaza4/gkv-cocoa
    ```
 
 3. Masuk ke direktori proyek:
 
    ```bash
-   cd Gkv-Cocoa
+   cd gkv-cocoa
    ```
 
 4. Instal semua library yang dibutuhkan dengan menjalankan perintah berikut di terminal:
@@ -50,7 +50,7 @@ Berikut adalah langkah-langkah untuk menjalankan Program ini di lingkungan lokal
 5. Jalankan Program dengan perintah berikut:
 
    ```bash
-   git clone https://github.com/namarepo/Gkv-Cocoa.git
+   python main.py
    ```
 ## Anggota Kelompok
 |Nama|NIM|
